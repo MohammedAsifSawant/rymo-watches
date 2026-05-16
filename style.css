@@ -1,0 +1,593 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+input:hover {
+  background-color: #3a3833;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #ff9977;
+}
+
+.star {
+  padding: 10px 0;
+}
+
+.star i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+.navbar {
+  font-size: 16px;
+  background: rgb(232, 235, 246);
+  
+  /* background: rgb(234, 237, 254); */
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+  color: rgb(108, 66, 248);
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Mobile Nav  */
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+#bar {
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  color: #1d1d1d;
+}
+
+#bar:hover,
+#bar.active {
+  color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+
+  body>nav>div>button:hover,
+  body>nav>div>button:focus {
+    background-color: rgb(204, 215, 251);
+    /* background-color:rgb(204, 215, 251); */
+  }
+
+  #navbarSupportedContent>ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  #navbarSupportedContent>ul>li:nth-child(n)>a {
+    padding: 10px 0;
+  }
+}
+
+#home {
+  background-image: url(images/3.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home span {
+  color: coral;
+}
+
+#home h1 {
+  color: bisque;
+}
+
+#home h5 {
+  color: bisque;
+}
+
+#home p {
+  color: bisque;
+}
+
+#home input {
+  background-image: url(images/button.png);
+  background-color: transparent;
+  color: coral;
+  border: 0;
+  padding: 14px 70px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  outline: none;
+}
+
+#home input:hover {
+  background-color: rgb(21, 2, 2);
+}
+
+#watchwear .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no- repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#watchwear .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+#watchwear .one:hover .details {
+  background-color: rgba(222, 222, 255, 0.7);
+}
+
+#watchwear .one .details button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+
+#watchwear .one .details button:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#watchwear .one:nth-child(1) .details {
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+
+#watchwear .one:nth-child(2) .details {
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+}
+
+#watchwear .one:nth-child(3) .details {
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+}
+
+/* products */
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+.product .buy-btn {
+  background: #ff8b64;
+  transition: translate(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+
+  transition: translate(0);
+  opacity: 1;
+
+}
+
+#banner{
+  background-image: url("images/banner/bb.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: end;
+  color: antiquewhite;
+}
+
+footer{
+  background-color: #222222;
+}
+
+footer h5{
+   color: #D8D8D8;
+   font-weight: 700;
+   font-size: 1.2rem;
+}
+
+footer li{
+  padding-bottom: 4px;
+}
+
+footer li a{
+  font-size: 0.8rem;
+  color: #999;
+}
+
+:root {
+  --brand-ink: #131826;
+  --brand-primary: #5b47d1;
+  --brand-accent: #ea6b3a;
+  --brand-soft: #f4f3ff;
+  --surface: rgba(255, 255, 255, 0.9);
+  --shadow-soft: 0 16px 34px rgba(22, 29, 55, 0.12);
+}
+
+body {
+  background: linear-gradient(180deg, #f7f8ff 0%, #fff9f5 100%);
+  color: var(--brand-ink);
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(91, 71, 209, 0.08);
+}
+
+.navbar img {
+  max-height: 44px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after,
+.navbar-light .navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
+}
+
+#home {
+  position: relative;
+  min-height: 100vh;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 14, 29, 0.78), rgba(10, 14, 29, 0.22));
+}
+
+#home .container {
+  position: relative;
+  z-index: 1;
+}
+
+#home h1 {
+  font-size: 3.4rem;
+  line-height: 1.08;
+  max-width: 620px;
+}
+
+#home input {
+  background-image: none;
+  background: linear-gradient(135deg, var(--brand-accent), #ffb183);
+  color: #fff;
+  padding: 14px 28px;
+  box-shadow: 0 14px 28px rgba(234, 107, 58, 0.24);
+  border-radius: 999px;
+}
+
+#home input:hover {
+  background: linear-gradient(135deg, var(--brand-primary), #8778ff);
+}
+
+#brand {
+  background: rgba(255,255,255,0.74);
+  border-radius: 24px;
+  margin-top: -42px;
+  box-shadow: var(--shadow-soft);
+}
+
+#brand img {
+  padding: 12px 24px;
+  opacity: 0.9;
+}
+
+#watchwear .one {
+  overflow: hidden;
+}
+
+#watchwear .one img,
+.product img,
+.post-img img {
+  border-radius: 20px;
+}
+
+.product {
+  background: var(--surface);
+  border-radius: 22px;
+  padding: 16px 14px 20px;
+  margin-bottom: 26px;
+  border: 1px solid rgba(31, 41, 55, 0.06);
+  box-shadow: 0 10px 24px rgba(31, 41, 55, 0.07);
+}
+
+.product:nth-child(4n + 2) {
+  background: #fffaf6;
+}
+
+.product:nth-child(4n + 3) {
+  background: #f8fbff;
+}
+
+.product .p-name {
+  min-height: 44px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.product .p-price {
+  font-size: 1.08rem;
+  color: var(--brand-primary);
+}
+
+.product .star {
+  margin-bottom: 8px;
+}
+
+.product .buy-btn,
+button {
+  background: linear-gradient(135deg, var(--brand-primary), #8475ff);
+  color: #fff;
+  border-radius: 999px;
+}
+
+.product .buy-btn:hover,
+button:hover {
+  background: linear-gradient(135deg, var(--brand-accent), #ffba93);
+  color: #fff;
+}
+
+#banner {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(18, 22, 40, 0.8), rgba(18, 22, 40, 0.18));
+}
+
+#banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+#blog-container .post {
+  background: rgba(255,255,255,0.9);
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+footer {
+  margin-top: 70px !important;
+}
+
+footer li a:hover,
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  #brand {
+    margin-top: 24px;
+  }
+}
+
+footer li a:hover{
+  color: #D8D8D8;
+}
+
+footer p{
+  color:#999 ;
+  font-size: 0.8rem;
+}
+
+footer .copyright a{
+  color: #000;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3 ease;
+  margin: 0 5px;
+}
+
+footer .copyright a:hover{
+  color: #fff;
+  background-color: #fda283;
+}
+
+
+/* blog */
+
+#blog-container .post .post-img{
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#blog-container .post img{
+  transition: 0.3s ease;
+}
+
+ #blog-container .post:hover img{
+  transform: scale(1.3) rotate(-10deg);
+  opacity: 0.8; 
+} 
+
+#blog-container .post h3{
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#blog-container .post:hover h3{
+  color: #fda283;
+}
+
+/* Cart */
+
+#cart-container table{
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#cart-container table thead{
+  font-weight:700;
+}
+
+#cart-container table thead td{
+  background:#ff9d7c ; 
+ /* background: rgb(255, 201, 207); */
+  color: #fff ;
+  border: none ;
+  padding: 6px ;
+}
+
+
+.light-theme {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.dark-theme {
+	background-color: #333333;
+	color: #FFFFFF;
+}
